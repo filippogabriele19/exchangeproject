@@ -12,11 +12,11 @@ download the project
 
 open the console inside the folder "exchangeproject-main"
 
-create a virtual environment -> "python -m venv myvenv"
+- create a virtual environment -> "python -m venv myvenv"
 
-run the virtual environment -> "myvenv\Scripts\activate"
+- run the virtual environment -> "myvenv\Scripts\activate"
 
-install requirements.txt -> "pip install -r requirements.txt"
+- install requirements.txt -> "pip install -r requirements.txt"
 
 - "python manage.py makemigrations"
 
@@ -26,7 +26,6 @@ install requirements.txt -> "pip install -r requirements.txt"
 
 - "python manage.py migrate app"
 
-
-run the project -> "python manage.py runserver"
+- run the project -> "python manage.py runserver"
 
 populate the book order with default data -> go to "http://127.0.0.1:8000/createdata"
