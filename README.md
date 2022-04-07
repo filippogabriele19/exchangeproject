@@ -18,10 +18,14 @@ run the virtual environment -> "myvenv\Scripts\activate"
 
 install requirements.txt -> "pip install -r requirements.txt"
 
-"python manage.py makemigrations"
-"python manage.py migrate"
-"python manage.py makemigrations app"
-"python manage.py migrate app"
+- "python manage.py makemigrations"
+
+- "python manage.py migrate"
+
+- "python manage.py makemigrations app"
+
+- "python manage.py migrate app"
+
 
 run the project -> "python manage.py runserver"
 
