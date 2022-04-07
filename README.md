@@ -18,6 +18,11 @@ run the virtual environment -> "myvenv\Scripts\activate"
 
 install requirements.txt -> "pip install -r requirements.txt"
 
+"python manage.py makemigrations"
+"python manage.py migrate"
+"python manage.py makemigrations app"
+"python manage.py migrate app"
+
 run the project -> "python manage.py runserver"
 
-populate the database with default data -> go to "http://127.0.0.1:8000/createdata"
+populate the book order with default data -> go to "http://127.0.0.1:8000/createdata"
