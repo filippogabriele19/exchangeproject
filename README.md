@@ -1,6 +1,6 @@
 "# exchangeproject"
 
-Welcome to this project In this project, a platform that simulates the basic operation of a bitcoin exchange
+Welcome to this project, a platform that simulates the basic operation of a bitcoin exchange
 
 Tools used: Python(3.10.2), Django, MongoDB, Djongo
 
