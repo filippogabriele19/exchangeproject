@@ -1,0 +1,24 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+
+  <br>
+  <br>
+  <h4>{{message}}</h4>
+
+
+<a href="{% url 'balance' %}"><h3>- Balance Page</h3></a>
+<a href="{% url 'bookorder' %}"><h3>- Book Order</h3></a>
+<a href="{% url 'placeneworder' %}"><h3>- Place new order</h3></a>
+
+
+
+{% else %}
+  <p>Welcome</p>
+{% endif %}
+{% endblock %}

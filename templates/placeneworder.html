@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+  <h2>Place new order</h2>
+  <br>
+  <div>
+    <form method="GET" action = "place_order/">
+        
+        <div class = "form-group">
+          <label for="fname" style="color:black">Order type: 
+          <input list="choose" name="type">
+
+          <datalist id="choose">
+            <option value="buy">
+            <option value="sell">
+          </datalist>
+
+          <br>
+          <br>
+          <label for="fname" style="color:black">Q.ty Bitcoin ( Owned {{user.bitcoin}}): 
+          <input type="text" name = "qty" placeholder="0.5"> 
+          <br>
+          <br>
+          <label for="fname" style="color:black">Entry price: 
+          <input type="text" name = "price" placeholder="0.5"> USD
+          <br>
+          <br>
+        </div>
+        
+        <input class="btn btn-primary" type="submit" value="Confirm">
+        <br><br>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+  <h2>Book Order</h2>
+  
+  <br>
+  <br>
+  <h3>Sell Orders:</h3>
+  {% for order in sell_orders %}
+  - Sell at {{order.price}} $ - {{order.quantity}} Btc  <br>
+  {% endfor %}
+  
+  <br>
+  <br>
+  <h3 style="color:red;">Current Price: {{btc_value}} $</h3>
+  <br>
+  <br>
+
+  <h3>Buy Orders:</h3>
+  {% for order in buy_orders %}
+  - Buy at {{order.price}} $ - {{order.quantity}} Btc  <br>
+  {% endfor %}
+
+
+{% endblock %}

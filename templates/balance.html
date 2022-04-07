@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+  <h2>Balance</h2>
+  <h3>Total balance value: {{total_balance}} $</h3>
+
+ Bitcoin: {{user.bitcoin}}  ( {{difference_btc_since_start}}% since start)
+<br> 
+ USD: {{user.usd}} ( {{difference_usd_since_start}}% since start)
+<br> 
+<br> 
+<h2>Open Orders</h2>
+  {% for order in my_orders_current_open %}
+    - {{order.datetime}} || {{order.typeorder}} {{order.quantity}} Btc at {{order.price}} $     
+    <a href="{% url 'cancel_order' pk=order.pk %}"> Cancel</a> 
+    <br>
+  {% endfor %}
+<br> 
+<br> 
+
+<h2>Trade History</h2>
+
+  {% for order in my_orders_closed %}
+    - {{order.datetime}} || {{order.typeorder}} {{order.quantity}} Btc at {{order.price}} $ <br>
+  {% endfor %}
+
+   
+{% endblock %}
